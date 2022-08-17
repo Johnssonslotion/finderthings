@@ -48,7 +48,7 @@ class ToiletRepository {
     );
 
     final result = toiletListItemsResponse(
-      ToiletItems: response.data.reults.map((e) {
+      ToiletItems: response.data.results.map((e) {
         return ToiletItem.fromJson(e);
       }).toList(growable: false),
       totalCount: response.data.total,
